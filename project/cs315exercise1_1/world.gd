@@ -8,3 +8,4 @@ func _process(delta: float) -> void:
 		get_tree().quit()
 		
 	$LaunchAngle.text = "Angle: %.d" % rad_to_deg(-1*$Ball.launch_angle)
+	$Power.text = "Power: %.d" % $Ball.power
