@@ -5,12 +5,19 @@ TO-DO: Description
 ## How to play
 
 Up Arrow/W: Increase launch power
+
 Down Arrow/S: Decrease launch power
+
 Left Arrow/A: Angle left
+
 Right Arrow/D: Angle right
+
 Space: Launch
+
 R: Reset
+
 Escape: Quit
+
 
 ## Third-Party Assets
 
