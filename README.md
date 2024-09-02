@@ -16,9 +16,6 @@ Space: Launch
 
 R: Reset
 
-Escape: Quit game
-
-
 ## Third-Party Assets
 
 Ground and wall sprites from [Rocky Grass Tileset](https://tilation.itch.io/multi-size-rocky-grass-tileset) and [Mythical Dungeon Tileset](https://tilation.itch.io/multi-size-mythical-dungeon-tileset) by [Tilation](https://tilation.itch.io/), both licensed under CC 3.0.
