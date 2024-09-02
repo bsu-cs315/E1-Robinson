@@ -4,6 +4,8 @@ An exercise from CS315 Fall 2024 that demonstrates 2D physics-based gameplay whe
 
 ## How to play
 
+Click [here](https://bsu-cs315.github.io/E1.1-WilliamRobinson/) to play the demo.
+
 Up Arrow/W: Increase launch power
 
 Down Arrow/S: Decrease launch power
