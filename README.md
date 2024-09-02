@@ -16,7 +16,7 @@ Right Arrow/D: Angle right
 
 Space: Launch
 
-R: Reset
+R/Esc: Reset
 
 ## Third-Party Assets
 
@@ -26,7 +26,7 @@ Ball sprite from [Rolling Ball Assets](https://kenney.nl/assets/rolling-ball-ass
 
 ## Report
 
-Both essential and auxiliary goals are met with this project. 
+Both the essential and the auxiliary goals are met with this project. 
 
 The player is able to control the launch angle using A/D and Left/Right arrow keys. Similarly, they can control the power of the launch using W/S and the Up/Down arrow keys. All of this can be seen in [the Ball script](project/cs315exercise1_1/ball.gd)
 
