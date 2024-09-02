@@ -34,7 +34,7 @@ Licenses are properly attributed in this README, with direct links to the assets
 
 The project is properly stored in a repository on GitHub with no unnecessary files.
 
-*TODO: GitHub Release*
+The project has a github release and a [playable web demo](https://bsu-cs315.github.io/E1.1-WilliamRobinson/).
 
 Instructions are given on the README on how to play the game as well as restart or exit it.
 
