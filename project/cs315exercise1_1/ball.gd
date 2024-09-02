@@ -20,3 +20,11 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("launch"):
 		var impulse = Vector2(1,0) * power
 		apply_impulse(impulse.rotated(launch_angle))
+
+func _on_body_entered(body):
+	if body.is_in_group("obstacle"):
+		$"/root/World/CollideLabel".position = self.position
+		$"/root/World/CollideLabel".show()
+		await get_tree().create_timer(3.0).timeout
+		$"/root/World/CollideLabel".hide()
+		print("Ow!")
