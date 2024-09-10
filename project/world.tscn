@@ -169,8 +169,8 @@ position = Vector2(40.5, 107)
 shape = SubResource("RectangleShape2D_m25uf")
 
 [node name="Launcher" parent="." instance=ExtResource("3_x6pc6")]
-position = Vector2(376, 464)
-scale = Vector2(3, 3)
+position = Vector2(192, 442)
+scale = Vector2(2, 2)
 
 [node name="CollideLabel" type="Label" parent="."]
 visible = false

@@ -25,7 +25,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("launch") and launched == false and ammo != 0:
 		launched = true
 		ammo -= 1
-		var impulse = Vector2(1,0) * power
+		var impulse = Vector2(1,0) * power * 1.5
 		var ball : RigidBody2D = preload("res://ball.tscn").instantiate()
 		get_parent().add_child(ball)
 		launch_sound()

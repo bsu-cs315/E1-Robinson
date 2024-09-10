@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cje2un1c3qbfs" path="res://textures/ball_blue_large.png" id="2_sioio"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kgu22"]
-radius = 32.0156
+radius = 22.0
 
 [node name="Ball" type="RigidBody2D"]
 contact_monitor = true
@@ -15,6 +15,7 @@ script = ExtResource("1_120q4")
 shape = SubResource("CircleShape2D_kgu22")
 
 [node name="BallSprite" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 0.75)
 texture = ExtResource("2_sioio")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
