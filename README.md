@@ -20,9 +20,9 @@ R/Esc: Reset
 
 ## Third-Party Assets
 
-Ground and wall sprites from [Rocky Grass Tileset](https://tilation.itch.io/multi-size-rocky-grass-tileset) and [Mythical Dungeon Tileset](https://tilation.itch.io/multi-size-mythical-dungeon-tileset) by [Tilation](https://tilation.itch.io/), both licensed under CC 3.0.
+Ground and wall sprites from [Voxel Pack](https://kenney.nl/assets/voxel-pack), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-Ball sprite from [Rolling Ball Assets](https://kenney.nl/assets/rolling-ball-assets), licensed under CC0.
+Ball sprite from [Rolling Ball Assets](https://kenney.nl/assets/rolling-ball-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Report
 

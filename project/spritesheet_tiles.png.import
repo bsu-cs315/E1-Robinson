@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c281mg31dyke7"
-path="res://.godot/imported/[64x64] Dungeon Bricks Plain.png-50092a28ef7c7f1e8d6555b95fb6e2a0.ctex"
+uid="uid://bfb3indm73v8b"
+path="res://.godot/imported/spritesheet_tiles.png-e90c68c69a58218151bfebe0c51769bf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://[64x64] Dungeon Bricks Plain.png"
-dest_files=["res://.godot/imported/[64x64] Dungeon Bricks Plain.png-50092a28ef7c7f1e8d6555b95fb6e2a0.ctex"]
+source_file="res://spritesheet_tiles.png"
+dest_files=["res://.godot/imported/spritesheet_tiles.png-e90c68c69a58218151bfebe0c51769bf.ctex"]
 
 [params]
 
