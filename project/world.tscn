@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=4 uid="uid://bfyyytyh86tuy"]
+[gd_scene load_steps=12 format=4 uid="uid://bfyyytyh86tuy"]
 
 [ext_resource type="Script" path="res://world.gd" id="1_han3f"]
-[ext_resource type="PackedScene" uid="uid://bcfbd0soknl8l" path="res://ball.tscn" id="2_1cl7l"]
-[ext_resource type="Texture2D" uid="uid://bfb3indm73v8b" path="res://spritesheet_tiles.png" id="2_pwikd"]
+[ext_resource type="Texture2D" uid="uid://ds8vh3ehmuxbf" path="res://textures/skybox_sideHills.png" id="2_grqxd"]
+[ext_resource type="Texture2D" uid="uid://bfb3indm73v8b" path="res://textures/spritesheet_tiles.png" id="2_pwikd"]
+[ext_resource type="PackedScene" uid="uid://dchjope3fgk5e" path="res://launcher.tscn" id="3_x6pc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3oru6"]
 texture = ExtResource("2_pwikd")
@@ -103,44 +104,62 @@ sources/0 = SubResource("TileSetAtlasSource_3oru6")
 
 [sub_resource type="LabelSettings" id="LabelSettings_q7yd1"]
 font_size = 64
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_fj7d6"]
 font_size = 64
+font_color = Color(0, 0, 0, 1)
 
-[sub_resource type="LabelSettings" id="LabelSettings_gnx3a"]
-font_size = 32
+[sub_resource type="LabelSettings" id="LabelSettings_vck1x"]
+font_size = 48
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m25uf"]
 size = Vector2(131, 258)
 
+[sub_resource type="LabelSettings" id="LabelSettings_gnx3a"]
+font_size = 32
+font_color = Color(0, 0, 0, 1)
+
 [node name="World" type="Node2D"]
 script = ExtResource("1_han3f")
+
+[node name="SkyboxSideHills" type="Sprite2D" parent="."]
+position = Vector2(256, 256)
+texture = ExtResource("2_grqxd")
+
+[node name="SkyboxSideHills2" type="Sprite2D" parent="."]
+position = Vector2(768, 256)
+texture = ExtResource("2_grqxd")
+
+[node name="SkyboxSideHills3" type="Sprite2D" parent="."]
+position = Vector2(1280, 256)
+texture = ExtResource("2_grqxd")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAAQAAAAHAAQAAAABAAQAAAAHAAQAAAACAAQAAAAHAAQAAAADAAQAAAAHAAQAAAAEAAQAAAAHAAQAAAAFAAQAAAAHAAQAAAAGAAQAAAAHAAQAAAAHAAQAAAAHAAQAAAAIAAQAAAAHAAQAAAAHAAMAAAAIAAMAAAAHAAIAAAAIAAMAAAAAAAUAAAAHAAUAAAABAAUAAAAHAAUAAAACAAUAAAAHAAUAAAADAAUAAAAHAAUAAAAEAAUAAAAHAAUAAAAFAAUAAAAHAAUAAAAGAAUAAAAHAAUAAAAHAAUAAAAHAAUAAAAIAAUAAAAHAAUAAAA=")
 tile_set = SubResource("TileSet_fnfn7")
 
 [node name="LaunchAngle" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 96.0
 label_settings = SubResource("LabelSettings_q7yd1")
 
 [node name="Power" type="Label" parent="."]
-offset_left = 7.0
-offset_top = 123.0
-offset_right = 47.0
-offset_bottom = 211.0
+offset_left = 16.0
+offset_top = 96.0
+offset_right = 56.0
+offset_bottom = 184.0
 label_settings = SubResource("LabelSettings_fj7d6")
 
-[node name="Ball" parent="." instance=ExtResource("2_1cl7l")]
-position = Vector2(608, 421)
-
-[node name="CollideLabel" type="Label" parent="."]
-visible = false
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Ow!"
-label_settings = SubResource("LabelSettings_gnx3a")
+[node name="AmmoLabel" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 184.0
+offset_right = 262.0
+offset_bottom = 272.0
+label_settings = SubResource("LabelSettings_vck1x")
 
 [node name="Wall" type="StaticBody2D" parent="." groups=["obstacle"]]
 position = Vector2(919, 274)
@@ -148,3 +167,14 @@ position = Vector2(919, 274)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall"]
 position = Vector2(40.5, 107)
 shape = SubResource("RectangleShape2D_m25uf")
+
+[node name="Launcher" parent="." instance=ExtResource("3_x6pc6")]
+position = Vector2(376, 464)
+scale = Vector2(3, 3)
+
+[node name="CollideLabel" type="Label" parent="."]
+visible = false
+offset_right = 60.0
+offset_bottom = 45.0
+text = "Ow!"
+label_settings = SubResource("LabelSettings_gnx3a")

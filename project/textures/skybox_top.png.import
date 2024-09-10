@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cje2un1c3qbfs"
-path="res://.godot/imported/ball_blue_large.png-731b3f8a9b82895cc2c0c796ebd40ffd.ctex"
+uid="uid://bvq7rkrrn5c65"
+path="res://.godot/imported/skybox_top.png-74503d4c9ff9a99944c7aa3ff4887a0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ball_blue_large.png"
-dest_files=["res://.godot/imported/ball_blue_large.png-731b3f8a9b82895cc2c0c796ebd40ffd.ctex"]
+source_file="res://textures/skybox_top.png"
+dest_files=["res://.godot/imported/skybox_top.png-74503d4c9ff9a99944c7aa3ff4887a0f.ctex"]
 
 [params]
 

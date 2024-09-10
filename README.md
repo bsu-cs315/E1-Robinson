@@ -1,6 +1,6 @@
-# CS315 Exercise 1.1
+# CS315 Exercise 1.2
 
-An exercise from CS315 Fall 2024 that demonstrates 2D physics-based gameplay where the player is able to control the angle and power of launching a ball. Feedback is given to the player when they collide with an obstacle.
+An exercise from CS315 Fall 2024 that demonstrates 2D physics-based gameplay where the player is able to control the angle and power of launching a ball via a launcher. Feedback is given to the player when they collide with an obstacle. The player has limited ammo and can only shoot one ball at a time.
 
 ## How to play
 
@@ -20,26 +20,22 @@ R/Esc: Reset
 
 ## Third-Party Assets
 
-Ground and wall sprites from [Voxel Pack](https://kenney.nl/assets/voxel-pack), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+Ground, wall, and background sprites from [Voxel Pack](https://kenney.nl/assets/voxel-pack), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 Ball sprite from [Rolling Ball Assets](https://kenney.nl/assets/rolling-ball-assets), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
+Gun sprite from [Guns](https://snoopethduckduck.itch.io/guns) by [SnoopethDuckDuck](https://snoopethduckduck.itch.io/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+Launch sound from [Laser Shot Big 2](https://freesound.org/people/bubaproducer/sounds/151015/) by [bubaproducer](https://freesound.org/people/bubaproducer/), licensed under [Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 ## Report
 
-Both the essential and the auxiliary goals are met with this project. 
+All essential goals are met for 1.2
 
-The player is able to control the launch angle using A/D and Left/Right arrow keys. Similarly, they can control the power of the launch using W/S and the Up/Down arrow keys. All of this can be seen in [the Ball script](project/cs315exercise1_1/ball.gd)
+Game uses graphics for launcher, ball, wall, ground, and background.
 
-Licenses are properly attributed in this README, with direct links to the assets given and both licenses tracked.
+Game plays a sound when the ball is launched.
 
-The project is properly stored in a repository on GitHub with no unnecessary files.
+Player can only shoot 5 balls before needing to reset, and can only shoot one at a time.
 
-The project has a github release and a [playable web demo](https://bsu-cs315.github.io/E1.1-WilliamRobinson/).
-
-Instructions are given on the README on how to play the game as well as restart or exit it.
-
-Launch angle can be modified and is clamped between 0 and 180 degrees.
-
-The Ball player character will show text saying "Ow!" when it collides with the brick wall.
-
-The launch power can be modified and is clamped between 0 and 1000.
+All assets are properly licensed with links to the assets, the creators, and the licenses themselves.
