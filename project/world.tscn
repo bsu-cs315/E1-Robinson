@@ -178,3 +178,5 @@ offset_right = 60.0
 offset_bottom = 45.0
 text = "Ow!"
 label_settings = SubResource("LabelSettings_gnx3a")
+
+[connection signal="launched_ball" from="Launcher" to="." method="_on_launcher_launched_ball"]

@@ -9,6 +9,8 @@ extends Node2D
 
 var launched = false
 
+signal launched_ball(ball)
+
 func _process(delta: float) -> void:
 	var angle_axis := Input.get_axis("angle_left", "angle_right")
 	launch_angle += angle_axis * angle_change_rate * delta
@@ -31,6 +33,7 @@ func _process(delta: float) -> void:
 		launch_sound()
 		ball.global_position = global_position
 		ball.apply_impulse(impulse.rotated(launch_angle))
+		launched_ball.emit(ball)
 		await get_tree().create_timer(5).timeout
 		ball.queue_free()
 		launched = false
