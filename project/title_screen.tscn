@@ -1,11 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://b85p53wedv814"]
+[gd_scene load_steps=6 format=3 uid="uid://b85p53wedv814"]
 
 [ext_resource type="Script" path="res://title_screen.gd" id="1_2dwrl"]
 
-[sub_resource type="SystemFont" id="SystemFont_puoga"]
-
 [sub_resource type="LabelSettings" id="LabelSettings_kqcsu"]
-font = SubResource("SystemFont_puoga")
 font_size = 48
 
 [sub_resource type="Animation" id="Animation_fs75d"]
@@ -13,7 +10,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Label:position")
+tracks/0/path = NodePath("Logo:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -28,7 +25,7 @@ resource_name = "title_logo_flyin"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Label:position")
+tracks/0/path = NodePath("Logo:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -64,12 +61,12 @@ size_flags_stretch_ratio = 2.0
 layout_mode = 2
 text = "Play"
 
-[node name="Label" type="Label" parent="."]
+[node name="Logo" type="Label" parent="."]
 layout_mode = 2
 offset_left = 456.0
 offset_top = -112.0
-offset_right = 724.0
-offset_bottom = -45.0
+offset_right = 813.0
+offset_bottom = -24.0
 grow_horizontal = 2
 text = "Ball Launch"
 label_settings = SubResource("LabelSettings_kqcsu")
