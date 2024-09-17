@@ -1,8 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://b85p53wedv814"]
+[gd_scene load_steps=7 format=3 uid="uid://b85p53wedv814"]
 
 [ext_resource type="Script" path="res://title_screen.gd" id="1_2dwrl"]
 
+[sub_resource type="SystemFont" id="SystemFont_puoga"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_kqcsu"]
+font = SubResource("SystemFont_puoga")
 font_size = 48
 
 [sub_resource type="Animation" id="Animation_fs75d"]
