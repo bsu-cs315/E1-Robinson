@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 
 func launch_sound():
 	var audio_stream_player := AudioStreamPlayer.new()
-	audio_stream_player.stream = load("res://audio/laser.wav")
+	audio_stream_player.stream = load("res://audio/151714__bowlingballout__pvc-rocket-cannon_2.mp3")
 	audio_stream_player.volume_db = linear_to_db(.2)
 	get_parent().add_child(audio_stream_player)
 	audio_stream_player.play()

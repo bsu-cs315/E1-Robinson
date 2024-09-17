@@ -26,7 +26,7 @@ Ball sprite from [Rolling Ball Assets](https://kenney.nl/assets/rolling-ball-ass
 
 Gun sprite from [Guns](https://snoopethduckduck.itch.io/guns) by [SnoopethDuckDuck](https://snoopethduckduck.itch.io/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
-Launch sound from [Laser Shot Big 2](https://freesound.org/people/bubaproducer/sounds/151015/) by [bubaproducer](https://freesound.org/people/bubaproducer/), licensed under [Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+Launch sound from [PVC Rocket Cannon_2.mp3](https://freesound.org/people/bowlingballout/sounds/151714/) by [bowlingballout](https://freesound.org/people/bowlingballout/), licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
 
 ## Report
 
