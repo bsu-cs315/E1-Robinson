@@ -1,6 +1,6 @@
 extends Node2D
 
-signal launched_ball(ball)
+signal launched_ball(ball: Ball)
 @export var launch_angle := -TAU/8
 @export var angle_change_rate := TAU/8
 @export var power := 800.0
@@ -17,7 +17,7 @@ func _process(delta: float) -> void:
 	global_rotation = clampf(launch_angle, deg_to_rad(-180), deg_to_rad(0))
 	
 	var power_axis := Input.get_axis("decrease_power", "increase_power")
-	power += power_axis * power_change_rate * delta	
+	power += power_axis * power_change_rate * delta
 	
 	power = clampf(power, 0, 1000)
 	
@@ -25,13 +25,13 @@ func _process(delta: float) -> void:
 		_launched = true
 		ammo -= 1
 		var impulse := Vector2(1,0) * power * 1.5
-		var ball: RigidBody2D = preload("res://ball.tscn").instantiate()
+		var ball: Ball = preload("res://ball.tscn").instantiate()
 		get_parent().add_child(ball)
 		launch_sound()
 		ball.global_position = global_position
 		ball.apply_impulse(impulse.rotated(launch_angle))
 		launched_ball.emit(ball)
-		await get_tree().create_timer(5).timeout
+		await get_tree().create_timer(3).timeout
 		ball.queue_free()
 		_launched = false
 

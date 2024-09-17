@@ -3,9 +3,6 @@ extends Node2D
 @onready var launcher: Node2D = $Launcher
 
 func _process(_delta: float) -> void:
-	if Input.is_action_pressed("restart"):
-		get_tree().reload_current_scene()
-	
 	$LaunchAngle.text = "Angle: %.d" % rad_to_deg(-1*launcher.launch_angle)
 	$Power.text = "Power: %.d" % launcher.power
 	$AmmoLabel.text = "Ammo: %.d" % launcher.ammo
