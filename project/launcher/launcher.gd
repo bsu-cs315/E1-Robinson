@@ -25,7 +25,7 @@ func _process(delta: float) -> void:
 		_launched = true
 		ammo -= 1
 		var impulse := Vector2(1,0) * power * 1.5
-		var ball: Ball = preload("res://ball.tscn").instantiate()
+		var ball: Ball = preload("res://ball/ball.tscn").instantiate()
 		get_parent().add_child(ball)
 		launch_sound()
 		ball.global_position = global_position
@@ -37,7 +37,7 @@ func _process(delta: float) -> void:
 
 func launch_sound():
 	var audio_stream_player := AudioStreamPlayer.new()
-	audio_stream_player.stream = load("res://audio/151714__bowlingballout__pvc-rocket-cannon_2.mp3")
+	audio_stream_player.stream = load("res://launcher/launch_sound.mp3")
 	audio_stream_player.volume_db = linear_to_db(.2)
 	get_parent().add_child(audio_stream_player)
 	audio_stream_player.play()

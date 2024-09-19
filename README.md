@@ -37,3 +37,18 @@ The title screen includes a fly-in animation for the game logo using AnimationPl
 The project complies with Godot's Style Guide.
 
 All existing and new assets are properly licensed with links to the assets, the creators, and the licenses themselves.
+
+## Revision Report
+
+Style guide error:
+
+- I made the mistake of grouping assets by type instead of bundling them into directories with their respective scenes and scripts per the style guide. This was due to an oversight on my part when reading through it. 
+
+- I corrected this by making folders for each unit and now know how to organize those things properly for the future in compliance with the style guide.
+
+
+Signal error:
+
+- There was a signal that passed an argument that wasn't used. While it could've been ignored with an "_", it doesn't make for the best clean code practices.
+
+- To fix this, I refactored the argument out of the signal. This has told me that I should be more diligent with how my code is working to prevent any unneeded messiness in the future.

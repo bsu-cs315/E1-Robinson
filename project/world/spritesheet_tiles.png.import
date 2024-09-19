@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvq7rkrrn5c65"
-path="res://.godot/imported/skybox_top.png-74503d4c9ff9a99944c7aa3ff4887a0f.ctex"
+uid="uid://bfb3indm73v8b"
+path="res://.godot/imported/spritesheet_tiles.png-8e7303a3a5af0f713c392e97d2b1cf04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/skybox_top.png"
-dest_files=["res://.godot/imported/skybox_top.png-74503d4c9ff9a99944c7aa3ff4887a0f.ctex"]
+source_file="res://world/spritesheet_tiles.png"
+dest_files=["res://.godot/imported/spritesheet_tiles.png-8e7303a3a5af0f713c392e97d2b1cf04.ctex"]
 
 [params]
 

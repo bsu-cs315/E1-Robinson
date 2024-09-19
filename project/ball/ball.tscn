@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://bcfbd0soknl8l"]
 
-[ext_resource type="Script" path="res://ball.gd" id="1_120q4"]
-[ext_resource type="Texture2D" uid="uid://cje2un1c3qbfs" path="res://textures/ball_blue_large.png" id="2_sioio"]
+[ext_resource type="Script" path="res://ball/ball.gd" id="1_120q4"]
+[ext_resource type="Texture2D" uid="uid://cje2un1c3qbfs" path="res://ball/ball_blue_large.png" id="2_sioio"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kgu22"]
 radius = 22.0

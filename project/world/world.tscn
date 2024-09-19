@@ -1,9 +1,9 @@
 [gd_scene load_steps=12 format=4 uid="uid://bfyyytyh86tuy"]
 
-[ext_resource type="Script" path="res://world.gd" id="1_han3f"]
-[ext_resource type="Texture2D" uid="uid://ds8vh3ehmuxbf" path="res://textures/skybox_sideHills.png" id="2_grqxd"]
-[ext_resource type="Texture2D" uid="uid://bfb3indm73v8b" path="res://textures/spritesheet_tiles.png" id="2_pwikd"]
-[ext_resource type="PackedScene" uid="uid://dchjope3fgk5e" path="res://launcher.tscn" id="3_x6pc6"]
+[ext_resource type="Script" path="res://world/world.gd" id="1_han3f"]
+[ext_resource type="Texture2D" uid="uid://ds8vh3ehmuxbf" path="res://world/skybox_sideHills.png" id="2_grqxd"]
+[ext_resource type="Texture2D" uid="uid://bfb3indm73v8b" path="res://world/spritesheet_tiles.png" id="2_pwikd"]
+[ext_resource type="PackedScene" uid="uid://dchjope3fgk5e" path="res://launcher/launcher.tscn" id="3_x6pc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3oru6"]
 texture = ExtResource("2_pwikd")
